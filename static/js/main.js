@@ -7,9 +7,9 @@ const html = document.documentElement;
 themeButton.addEventListener("click", () => {
   const newTheme = html.dataset.theme === "night" ? "lofi" : "night";
   if (newTheme === "night") {
-    githubIcon.src = "Images/GithubWhite.png"
+    githubIcon.src = "/static/Images/GithubWhite.png"
   } else {
-    githubIcon.src = "Images/GithubBlack.png"
+    githubIcon.src = "/static/Images/GithubBlack.png"
   }
   html.dataset.theme = newTheme;
   localStorage.setItem("theme", newTheme);
@@ -28,5 +28,5 @@ brightnessButton.addEventListener("click", () => {
     html.dataset.brightness = "normal";
   }
 
-  localStorage.setItem("brightness". html.dataset.brightness);
+  localStorage.setItem("brightness", html.dataset.brightness);
 });

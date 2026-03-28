@@ -1,4 +1,4 @@
-(function () { // I need to rewrite this as currently the github logo will not display on darker if it works.
+(function () { // I need to rewrite this as currently the github logo will not display on darker if it works. (For unknown reason it appears it actually doesn't??)
 const html = document.documentElement;
 
 const savedTheme = localStorage.getItem("theme") || "night";
