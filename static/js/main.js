@@ -1,22 +1,16 @@
-const themeButton = document.getElementById("theme-toggle");
+const themeButton = document.getElementById("theme");
 const brightnessButton = document.getElementById("brightness");
+const githubIcon = document.getElementById("github")
 
 const html = document.documentElement;
 
-const savedTheme = localStorage.getItem("theme");
-const savedBrightness = localStorage.getItem("brightness");
-// I know what you're going to say, answer is I don't care. I'm going to use the memory for these consts
-// They're already running a browser we can save THREE useless consts it'll be fine.
-if (savedTheme) {
-  html.dataset.theme = savedTheme;
-}
-
-if (brightness) {
-  html.dataset.brightness = savedBrightness;
-}
-
 themeButton.addEventListener("click", () => {
   const newTheme = html.dataset.theme === "night" ? "lofi" : "night";
+  if (newTheme === "night") {
+    githubIcon.src = "Images/GithubWhite.png"
+  } else {
+    githubIcon.src = "Images/GithubBlack.png"
+  }
   html.dataset.theme = newTheme;
   localStorage.setItem("theme", newTheme);
 });

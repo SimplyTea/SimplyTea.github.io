@@ -1,0 +1,148 @@
+pre {
+  overflow-x: auto;
+  padding: 1em;
+  border-radius: 8px;
+  font-family: "Fira Code", monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 1.5rem 0;
+  white-space: pre;
+}
+
+pre code,
+code[class^="hl-"],
+code[class*=" hl-"] {
+  display: inline;
+  white-space: pre;
+  padding: 0;
+  margin: 0;
+  background: none; /* remove unwanted highlighting behind tokens */
+  box-shadow: none;
+}
+
+[data-theme="night"] pre {
+  background: #232834;
+  color: #cbccc6;
+}
+
+/* keywords, operators */
+[data-theme="night"] .hl-keyword,
+[data-theme="night"] .hl-operator {
+  color: #ffcc66;
+}
+
+/* functions, titles */
+[data-theme="night"] .hl-function,
+[data-theme="night"] .hl-title {
+  color: #5ccfe6;
+}
+
+/* variables, parameters */
+[data-theme="night"] .hl-variable,
+[data-theme="night"] .hl-parameter {
+  color: #f28779;
+}
+
+/* strings, constants */
+[data-theme="night"] .hl-string,
+[data-theme="night"] .hl-constant {
+  color: #bae67e;
+}
+
+/* numbers */
+[data-theme="night"] .hl-number {
+  color: #d4bfff;
+}
+
+/* comments */
+[data-theme="night"] .hl-comment {
+  color: #5c6773;
+  font-style: italic;
+}
+
+/* types, classes */
+[data-theme="night"] .hl-type,
+[data-theme="night"] .hl-class {
+  color: #ffa759;
+}
+
+
+[data-theme="lofi"] pre {
+  background: #fafafa;
+  color: #4b505a;
+}
+
+/* keywords, operators */
+[data-theme="lofi"] .hl-keyword,
+[data-theme="lofi"] .hl-operator {
+  color: #fa8d3e;
+}
+
+/* functions, titles */
+[data-theme="lofi"] .hl-function,
+[data-theme="lofi"] .hl-title {
+  color: #399ee6;
+}
+
+/* variables, parameters */
+[data-theme="lofi"] .hl-variable,
+[data-theme="lofi"] .hl-parameter {
+  color: #d44b4b;
+}
+
+/* strings, constants */
+[data-theme="lofi"] .hl-string,
+[data-theme="lofi"] .hl-constant {
+  color: #86b300;
+}
+
+/* numbers */
+[data-theme="lofi"] .hl-number {
+  color: #a37acc;
+}
+
+/* comments */
+[data-theme="lofi"] .hl-comment {
+  color: #9da0a2;
+  font-style: italic;
+}
+
+/* types, classes */
+[data-theme="lofi"] .hl-type,
+[data-theme="lofi"] .hl-class {
+  color: #d8843e;
+}
+
+.hl-function,
+.hl-title {
+  font-weight: 500;
+}
+
+.hl-comment {
+  font-style: italic;
+}
+
+
+/* syntax.css */
+
+/* syntax.css - NvChad Onedark/Base46 Style */
+
+/* Core Syntax */
+.token.keyword    { color: #c678dd; font-weight: 600; } /* fn, let, impl, match */
+.token.function   { color: #61afef; }                   /* main, println */
+.token.string     { color: #98c379; }                   /* "hello" */
+.token.comment    { color: #6f737b; font-style: italic; } /* // comment */
+
+/* Types and Variables */
+.token.type       { color: #e5c07b; }                   /* String, u32, Vec */
+.token.identifier { color: #e06c75; }                   /* variable_name */
+.token.constant   { color: #d19a66; }                   /* 42, true, NONE */
+
+/* Symbols and Logic */
+.token.operator   { color: #abb2bf; }                   /* =, +, ->, :: */
+.token.macro      { color: #e06c75; }                   /* vec!, panic! */
+.token.include    { color: #61afef; }                   /* use std::io; */
+
+/* Special Rust tokens */
+.token.self       { color: #e06c75; font-style: italic; } /* self */
+.token.attribute  { color: #e5c07b; }                   /* #[derive(Debug)] */
