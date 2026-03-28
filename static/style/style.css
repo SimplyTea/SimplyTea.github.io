@@ -237,13 +237,6 @@ blockquote p {
   margin: 0;
   padding: 0;
 }
-/*
-  .site-nav ul {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-}
-*/
 
 .site-nav a {
   color: var(--color-accent);
@@ -260,7 +253,7 @@ blockquote p {
   background: var(--color-base-3);
   border: none;
   color: var(--color-base-content);
-  padding: 0.4rem 0.7rem;
+  padding: 0.4rem 0.35rem;
   border-radius: var(--radius-field);
   cursor: pointer;
   font-family: monospace;
@@ -276,7 +269,7 @@ blockquote p {
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--color-base-3);
+  border: 0px solid var(--color-base-3);
 }
 
 
@@ -341,15 +334,19 @@ blockquote p {
 .footer-wrap {
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap; /* Makes it look good on phones */
+  flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2rem 0;
 }
 
 .footer-section {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  min-width: 150px;
+  min-width: 100px;
 }
 
 .footer-title {
